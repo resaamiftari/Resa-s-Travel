@@ -1,0 +1,113 @@
+:root{
+    --primary: #2d6cdf;
+    --primary-dark: #1b3a6b;
+    --backround: #f4f7fb;
+    --white: #fff;
+    --gray: #e5e9f2;
+    --text: #222;
+    --shadow: 0 2px 8px rgba(44, 108,223,0.07);
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif ;
+    background: var(--backround);
+    color: var(--text);
+    min-height: 150px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    background: var(--white) ;
+    box-shadow: var(--shadow) ;
+    padding: 0;
+}
+
+.nav-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--primary);
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+ nav ul li a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 10px;
+    padding: 8px 0;
+    transition: color 0.2s;
+ }
+
+ nav ul li.active a,
+ nav ul li a:hover {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+ }
+
+ .main-hero{
+    padding: 60px 20px 40px 20px;
+    text-align: center;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 40px;
+ }
+
+ .main-hero h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+ }
+
+ .cta-button , .big-button{
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--white);
+    color: var(--primary);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: backround 0.2s color 0.2s transform 0.2s;
+ }
+
+ .cta-button:hover , .big-button:hover{
+    background: var(--primary);
+    color: var(--white);
+ }
+
+.destinations-section{
+    padding: 40px 0 60px 0;
+    text-align: center;
+}
+
+.destinations-section h1{
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: var(--primary-dark);
+}
+
